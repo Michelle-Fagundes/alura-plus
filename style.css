@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;700&family=Inter:wght@400;700&family=Pacifico&display=swap');
+
+
+:root {
+    --cor-branco-primary: #FFFFFF;
+    --cor-cinza-secundary: #C0C0C0;
+    --cor-de-fundo: #00030C;
+    --botao-azul: #167BF7;
+    --font-primary: 'Inter';
+    --color-efects: rgb(111, 163, 185);
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-branco-primary);
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.primary {
+    background-image: url(./img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center; /*o texto está alinhado, mas também a imagem. Por que isso? Ele funciona alinhando ao centro tudo o que está dentro de um elemento de bloco. Ou seja, aquela section que criamos para a primeira seção, por padrão ele veio com o display: block. Então esse text align alinhou tudo o que tem ali dentro, inclusive, a imagem*/
+    
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.container__box {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__img {
+    margin: 1em 0 2em 0; /*Quando quatro valores são especificados, as margens se aplicam à parte superior, à direita, à parte inferior e à esquerda, nessa ordem (sentido horário).*/
+}
+
+.container__button {
+    background-color: var(--botao-azul);
+    color: var(--cor-branco-primary);
+    padding: 1em;
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.button__secundary {
+    background-color: transparent;
+    border: 1px solid var(--cor-branco-primary)
+}
+
+.container__warning {
+    font-size: 12px;
+    color: var(--cor-cinza-secundary)
+}
+
+/*Div secundária da página Alura Plus*/
+
+.container__box {
+    margin: 0 6em;
+    
+}
+
+
+.secundary__img {
+    width: 80%;
+}
+
+.secundary {
+    align-items: center;
+    margin: 0 10em;
+    padding-bottom: 11em;
+    
+}
+
+
+.description_title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--cor-branco-primary);
+    margin-bottom: 0.1em;    
+
+}
+
+.description_text {
+    color: var(--cor-cinza-secundary);
+}
+
+.container__button__secundary {
+    display: inline-block;
+    margin-top: 1em;
+
+     
+}
+
+.container__description {
+    padding: 2em;
+
+}
+
+/*Div terciária da página Alura Plus*/
+
+
+
+.devices__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+    
+}
+
+.devices {
+    text-align: center;
+        
+    
+}
+
+.devices__title {
+    font-size: 48px;
+    color: var(--cor-branco-primary);
+}
+
+.list__item {
+    font-size: 32px;
+    color: var(--cor-branco-primary);
+}
+
+/*Rodapé*/
+
+.footer {
+    text-align: center;
+    margin: 5em 3em;
+    
+}
+
+.footer_logo {
+    margin-top: 8em;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 2em 0;
+        
+}   
+
+.footer__item {
+    color: var(--cor-branco-primary);
+    text-decoration: none;
+
+}
+
+.footer__text {
+    margin: 1em 0;
+    color: var(--cor-cinza-secundary);
+    font-size: 14px;
+}
+
+/*Efeitos da página utilizando pseudo-classes: ele detecta, por exemplo, se o elemento está com um mouse em cima dele, construindo uma experiência interativa com o usuário*/
+
+.footer__item:hover {
+    color: var(--botao-azul);
+}
+
+.footer__item:active {
+    color: purple;
+}
+
+.container__button:hover {
+    background-color: var(--color-efects);
+    color: var(--cor-de-fundo);
+}
+
